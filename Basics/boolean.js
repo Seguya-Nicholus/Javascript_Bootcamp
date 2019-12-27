@@ -5,12 +5,23 @@
 
 let tempK = 31
 let isFreezing = tempK === 31
-console.log(isFreezing)
+
+if(isFreezing){
+    console.log('It is freezing outside!')
+}
 
 
 // Challenge area
-let age = 32
-let isChild = age <= 7;
-console.log(isChild)
-let isSenior = age >= 65;
-console.log(isSenior)
+let age = 70
+// let isChild = age <= 7;
+// console.log(isChild)
+// let isSenior = age >= 65;
+// console.log(isSenior)
+
+if (age <= 7){
+    console.log('Children of 7 Yrs and below pay UGX 5k ')
+}
+if(age >= 65){
+    console.log('Seniors of 65 Yrs and above pay UGX 10k')
+}
+
