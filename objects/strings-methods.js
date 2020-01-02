@@ -27,7 +27,7 @@ console.log(isValidPassword('asdfp'))
 console.log(isValidPassword('abc123!@#$%^&'))
 console.log(isValidPassword('asdfpasdfpoijpassword'))
 
-// =========== Method 2 ================================
+// ========================== Method 2 ================================
 let isValidPassword = function (pwdStr){
     if (pwdStr.length < 9 || pwdStr.includes('password')){
         console.log(pwdStr.length)
