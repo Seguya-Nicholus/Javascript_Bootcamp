@@ -44,8 +44,8 @@ console.log(Student5)
 
 // Method 2
 
-let gradeCalc2 = function (score, totalScore) {
-    let percent = (score / totalScore) * 100
+const gradeCalc2 = function (score, totalScore) {
+    const percent = (score / totalScore) * 100
     let letterGrade = ''
 
     if (percent >= 90) {
