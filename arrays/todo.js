@@ -16,6 +16,8 @@ lst.push('New Note')
 
 // Remove the first item from the list
 lst.shift()
+console.log('\n')
+console.log('============ Using the forEach Method  =============================')
 
 console.log(`You have ${lst.length} Notes in the List`)
 // console.log(lst)
@@ -25,3 +27,11 @@ lst.forEach(function (item, index) {
     console.log(`${num}. ${item}`)
     
 })
+
+console.log('============ Using the For Loop =============================')
+// console.log('\n')
+console.log(`You have ${lst.length} Notes in the List`)
+for (let count = 0; count < lst.length; count++){
+    const num = count + 1
+    console.log(`${num}. ${lst[count]}`)
+}
