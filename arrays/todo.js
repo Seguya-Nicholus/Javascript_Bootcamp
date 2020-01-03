@@ -18,4 +18,10 @@ lst.push('New Note')
 lst.shift()
 
 console.log(`You have ${lst.length} Notes in the List`)
-console.log(lst)
+// console.log(lst)
+
+lst.forEach(function (item, index) {
+    const num = index + 1
+    console.log(`${num}. ${item}`)
+    
+})
