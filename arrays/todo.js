@@ -35,3 +35,38 @@ for (let count = 0; count < lst.length; count++){
     const num = count + 1
     console.log(`${num}. ${lst[count]}`)
 }
+
+
+// Challange Area
+
+const notes = [{
+    text: 'Read a Book',
+    completed: true
+},
+{
+    text: 'Take a Walk',
+    completed: false
+}, {
+    text: 'Watch a Movie',
+    completed: false
+}, {
+    text: 'Fetch Water',
+    completed: true
+}, {
+    text: 'Finish Assignment',
+    completed: false
+}]
+
+
+const deleteTodo = function (notes, todoText) {
+    const index = notes.findIndex(function (note) {
+        return note.text.toLowerCase() === todoText.toLowerCase()
+    })
+
+    if (index > -1) {
+        notes.splice(index, 1)
+    }
+}
+
+let note = deleteTodo(notes, 'Fetch Water')
+console.log(notes)
