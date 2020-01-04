@@ -25,3 +25,25 @@ console.log(months)
 // Replaces the 1st element at the 4th index position
 months.splice(4, 1,'May')
 console.log(months)
+
+
+// How to use findindex in arrays
+const notes = [{},{
+    title: 'My next trip',
+    body: 'I would like to go to Spain'
+}, {
+    title: 'Habbits to work on',
+    body: 'Exercise. Eating a bit better.'
+}, {
+    title: 'Office modification',
+    body: 'Get a new seat'
+}]
+
+console.log(notes.length)
+console.log(notes)
+
+const index = notes.findIndex(function (note, index) {
+    return note.title === 'Habbits to work on'
+})
+console.log(index)
+
